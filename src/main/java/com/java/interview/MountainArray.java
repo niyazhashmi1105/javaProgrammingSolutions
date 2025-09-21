@@ -13,12 +13,13 @@ public class MountainArray {
         if(arr.length < 2){
             return false;
         }
-        int i =0;
-        while(i+1 < arr.length && arr[i] < arr[i+1]) {
-           i++;
+        int i = 0;
 
+        while( i+1 < arr.length && arr[i] < arr[i+1]) {
+           i++;
         }
-        while(i+1 < arr.length && arr[i] > arr[i+1]) {
+
+        while( i+1 < arr.length && arr[i] > arr[i+1]) {
             i++;
         }
 

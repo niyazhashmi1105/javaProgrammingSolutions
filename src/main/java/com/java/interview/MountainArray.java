@@ -4,8 +4,14 @@ public class MountainArray {
 
     public static void main(String[] args) {
 
-        int [] arr = {1,2,3,4,2,3,2,0};
-        System.out.println(isMountainArray(arr));
+        int [] arr = {1,2,3,4,2,1,0};
+
+        if(isMountainArray(arr)){
+            System.out.println("It's a Mountain Array");
+        }
+        else{
+            System.out.println("It's not a Mountain Array");
+        }
     }
 
     private static boolean isMountainArray(int[] arr) {

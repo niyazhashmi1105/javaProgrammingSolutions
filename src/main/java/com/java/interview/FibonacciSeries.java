@@ -1,6 +1,6 @@
 package com.java.interview;
 
-public class FibonaciSeries {
+public class FibonacciSeries {
 
     public static void main(String[] args) {
 
@@ -9,7 +9,7 @@ public class FibonaciSeries {
         int third;
         int num = 0;
 
-        while(num <=10){
+        while(num <= 25){
 
             System.out.print(first+" ");
             third = first + second;

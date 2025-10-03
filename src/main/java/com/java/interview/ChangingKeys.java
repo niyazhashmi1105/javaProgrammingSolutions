@@ -4,23 +4,23 @@ public class ChangingKeys {
 
     public static void main(String[] args) {
 
-        String str = "abBcCD";
+        String str = "BabaABcCD";
         System.out.println(getKeysChangeCount(str));
     }
 
     private static int getKeysChangeCount(String str) {
 
-        char lastKey = str.toCharArray()[0];
-        lastKey = Character.toLowerCase(lastKey);
+        char firstKey = str.toCharArray()[0];
+        firstKey = Character.toLowerCase(firstKey);
         int count = 0;
 
         for(int i = 1; i < str.length() ; i++){
             char currentKey = str.toCharArray()[i];
             currentKey = Character.toLowerCase(currentKey);
-            if(lastKey != currentKey){
+            if(firstKey != currentKey){
                 count++;
             }
-            lastKey = currentKey;
+            firstKey = currentKey;
         }
         return count;
     }

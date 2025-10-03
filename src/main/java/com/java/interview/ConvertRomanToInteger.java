@@ -7,7 +7,7 @@ public class ConvertRomanToInteger {
 
     public static void main(String[] args) {
 
-        String str ="MC";
+        String str ="CM";
         System.out.println(convertRomanToInteger(str));
     }
 

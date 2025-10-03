@@ -18,10 +18,10 @@ public class FindFrequencyOfSpecialCharacters {
 
         for(char ch:chArray){
             if(!((ch >= 'a'&& ch <='z')||(ch >='A' && ch <= 'Z') || (ch >='0' && ch <='9')||(ch ==' '))) {
-                if (specialCharCountMap.containsKey(ch)) {
-                    specialCharCountMap.put(ch, specialCharCountMap.get(ch) + 1);
+                if (!specialCharCountMap.containsKey(ch)) {
+                    specialCharCountMap.put(ch,1);
                 } else {
-                        specialCharCountMap.put(ch,1);
+                    specialCharCountMap.put(ch, specialCharCountMap.get(ch) + 1);
                 }
             }
         }

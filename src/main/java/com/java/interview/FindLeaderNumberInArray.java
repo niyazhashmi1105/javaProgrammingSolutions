@@ -9,11 +9,10 @@ public class FindLeaderNumberInArray {
 
     private static void getLeaderNumber(int[] arr) {
 
-        int length = arr.length;
-        int maxRight = arr[length-1];
+        int maxRight = arr[arr.length-1];
         System.out.println(maxRight);
 
-        for(int index = length-2; index >=0 ;index--){
+        for(int index = arr.length-2; index >=0 ;index--){
             if(arr[index] > maxRight){
                 maxRight = arr[index];
                 System.out.println(maxRight);

@@ -6,7 +6,7 @@ public class BalancedParentheses {
 
     public static void main(String[] args) {
 
-        String input = "()";
+        String input = "[{()}]";
         System.out.println(checkValidParentheses(input));
     }
 
@@ -16,10 +16,10 @@ public class BalancedParentheses {
         Stack<Character> stack = new Stack<>();
 
         for(char currentChar : ch) {
-            if(currentChar == '(') {
+            if(currentChar == '('|| currentChar == '{' || currentChar == '[') {
                 stack.push(currentChar);
             }
-            else if(currentChar == ')') {
+            else if(currentChar == ')'|| currentChar == '}' || currentChar == ']') {
                 if(stack.isEmpty()) {
                     return false;
                 }

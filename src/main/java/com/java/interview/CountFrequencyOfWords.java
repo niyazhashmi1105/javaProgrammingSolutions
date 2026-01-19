@@ -1,6 +1,4 @@
 package com.java.interview;
-
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

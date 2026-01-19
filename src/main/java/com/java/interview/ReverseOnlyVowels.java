@@ -19,11 +19,11 @@ public class ReverseOnlyVowels {
         int right = ch.length-1;
 
         while(left < right){
-            if(vowels.indexOf(ch[left])== -1){
+            if(vowels.indexOf(ch[left]) == -1){
                 left++;
             }
 
-            else if(vowels.indexOf(ch[right])== -1){
+            else if(vowels.indexOf(ch[right]) == -1){
                 right--;
             }
             else{

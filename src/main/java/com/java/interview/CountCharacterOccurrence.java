@@ -10,7 +10,7 @@ public class CountCharacterOccurrence {
         System.out.println(getCharacterCount(str));
     }
 
-    private static int getCharacterCount(String str){
+    static int getCharacterCount(String str){
 
 
         return str.length()- str.replaceAll("a","").length();

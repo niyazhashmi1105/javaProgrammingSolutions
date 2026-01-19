@@ -14,7 +14,7 @@ public class ReverseWords {
         String result = "";
 
         for(int i=arr.length-1;i>=0;i--){
-            result = result + arr[i] + " ";
+            result += arr[i] + " ";
         }
         return result;
 

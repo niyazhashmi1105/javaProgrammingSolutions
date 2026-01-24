@@ -10,7 +10,7 @@ public class UniqueSubString {
         System.out.println(getUniqueSubString(str));
     }
 
-    private static StringBuilder getUniqueSubString(String str){
+    private static String getUniqueSubString(String str){
 
         Set<Character> set = new LinkedHashSet<>();
         StringBuilder sb = new StringBuilder();
@@ -23,7 +23,7 @@ public class UniqueSubString {
         for(char character:set){
             sb.append(character);
         }
-        return sb;
+        return sb.toString();
     }
 
 }

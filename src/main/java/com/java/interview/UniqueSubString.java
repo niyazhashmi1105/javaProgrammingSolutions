@@ -17,12 +17,11 @@ public class UniqueSubString {
         char [] ch = str.toCharArray();
 
         for(char currentChar:ch){
-            set.add(currentChar);
+            if(set.add(currentChar)){
+                sb.append(currentChar);
+            }
         }
 
-        for(char character:set){
-            sb.append(character);
-        }
         return sb.toString();
     }
 

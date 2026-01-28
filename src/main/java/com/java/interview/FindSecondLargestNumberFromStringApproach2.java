@@ -2,7 +2,7 @@ package com.java.interview;
 
 import java.util.TreeSet;
 
-public class FindSeconfLargestNumberFromStringApproach2 {
+public class FindSecondLargestNumberFromStringApproach2 {
 
     public static void main(String[] args) {
 

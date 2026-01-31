@@ -12,7 +12,7 @@ public class Palindrome {
     public static boolean isPalindrome(String str){
 
         if (str == null)
-                return false;
+            return false;
 
         if(str.length() <=1){
             return true;

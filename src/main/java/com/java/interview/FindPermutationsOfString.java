@@ -9,7 +9,7 @@ public class FindPermutationsOfString {
     }
 
     private static void findPermutation(String str, String prefix) {
-        if(str.isEmpty()){
+        if(str.length()==0){
             System.out.println(prefix);
         }
         else{
@@ -18,7 +18,5 @@ public class FindPermutationsOfString {
                 findPermutation(rem, prefix+str.charAt(i));
             }
         }
-
-
     }
 }

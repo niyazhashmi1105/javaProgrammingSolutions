@@ -7,7 +7,7 @@ public class ConvertRomanToInteger {
 
     public static void main(String[] args) {
 
-        String str ="CM";
+        String str ="CMXII";
         System.out.println(convertRomanToInteger(str));
     }
 

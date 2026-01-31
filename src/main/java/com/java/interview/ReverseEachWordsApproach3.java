@@ -6,9 +6,9 @@ public class ReverseEachWordsApproach3 {
 
         String input = "This is fun";
 
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         for(String words: input.split(" ")){
-            StringBuffer word = new StringBuffer(words);
+            StringBuilder word = new StringBuilder(words);
             result.append(word.reverse().append(" "));
         }
         System.out.println(result.toString().trim());

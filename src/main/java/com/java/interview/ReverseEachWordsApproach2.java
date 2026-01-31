@@ -11,10 +11,9 @@ public class ReverseEachWordsApproach2 {
     private static String reverseEachWord(String input) {
 
         String [] words = input.split(" ");
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         for(String word: words){
             char [] ch = word.toCharArray();
-
             int left = 0;
             int right = ch.length-1;
             char temp;

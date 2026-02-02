@@ -14,7 +14,6 @@ public class ReplaceVowelsWithX {
         StringBuilder sb = new StringBuilder();
 
         char []ch = str.toCharArray();
-
         for(char currentChar:ch){
             if(currentChar == 'a'|| currentChar =='e' || currentChar =='i'|| currentChar == 'o'|| currentChar == 'u'){
                 sb.append('X');

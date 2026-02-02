@@ -21,7 +21,6 @@ public class AnagramApproach3 {
         for(char c: str1.toCharArray()){
             map.put(c,map.getOrDefault(c,0)+1);
         }
-
         System.out.println(map);
         for(char c: str2.toCharArray()){
             if(!map.containsKey(c)){

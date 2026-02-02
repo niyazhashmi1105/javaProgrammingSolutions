@@ -7,7 +7,7 @@ public class StringCompression {
         StringBuilder sb = new StringBuilder();
         int count = 1;
 
-        for(int index = 1;index< input.length();index++){
+        for(int index = 1; index < input.length(); index++){
             if(input.charAt(index) == input.charAt(index-1)){
                 count++;
             }

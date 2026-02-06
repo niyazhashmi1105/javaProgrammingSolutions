@@ -5,7 +5,8 @@ public class ReverseOnlyLetters {
     public static void main(String[] args) {
 
         String str = "1abc2d3";
-        System.out.println(getRevereLettersOnly(str));
+        System.out.println("Original String: "+str);
+        System.out.println("Resultant String: "+getRevereLettersOnly(str));
     }
 
     private static String getRevereLettersOnly(String str){

@@ -4,7 +4,7 @@ public class ReplaceVowelsWithX {
 
     public static void main(String[] args) {
 
-        String input ="Name";
+        String input ="Name Is";
         System.out.println(replaceVowelsOnlyWithX(input));
     }
 

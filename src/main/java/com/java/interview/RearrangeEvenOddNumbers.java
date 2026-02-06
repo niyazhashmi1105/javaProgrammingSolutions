@@ -25,6 +25,8 @@ public class RearrangeEvenOddNumbers {
                 int temp = a[left];
                 a[left] = a[right];
                 a[right] = temp;
+                left++;
+                right--;
             }
 
         }

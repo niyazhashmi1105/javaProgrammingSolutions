@@ -23,8 +23,8 @@ public class PrintUniqueCharacters {
             }
 
         }
-        sb.append(set);
-        System.out.println(sb.toString());
+        sb.append(set).append(" ");
+        System.out.println(sb);
 
     }
 }

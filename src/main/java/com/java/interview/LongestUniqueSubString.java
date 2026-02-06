@@ -7,10 +7,10 @@ public class LongestUniqueSubString {
 
     public static void main(String[] args) {
         String str = "Java is great";
-        getLongestUninqueSubstring(str);
+        getLongestUniqueSubstring(str);
     }
 
-    private static void getLongestUninqueSubstring(String str) {
+    private static void getLongestUniqueSubstring(String str) {
 
         int left = 0, maxLength = 0;
         Set<Character> set = new LinkedHashSet<>();

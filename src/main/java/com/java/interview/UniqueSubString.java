@@ -6,7 +6,7 @@ import java.util.Set;
 public class UniqueSubString {
 
     public static void main(String[] args) {
-        String str = "aaabbcddcaab";
+        String str = "aaabbcddcaabe";
         System.out.println(getUniqueSubString(str));
     }
 

@@ -23,7 +23,7 @@ public class AnagramsApproach2 {
         }
 
         for(int count : charCount){
-            if( count !=0 ){
+            if( count != 0 ){
                 return false;
             }
         }

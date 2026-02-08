@@ -14,9 +14,9 @@ public class ArmstrongNumber {
         int arm = 0;
         int number = 0;
         while(digit > 0){
-            number = digit %10;
-            arm = arm+ number * number * number;
-            digit/=10;
+            number = digit % 10;
+            arm = arm + number * number * number;
+            digit /= 10;
         }
         if(arm == num){
             return true;

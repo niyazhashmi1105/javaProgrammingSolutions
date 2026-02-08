@@ -1,5 +1,7 @@
 package com.java.interview;
 
+import java.sql.SQLOutput;
+
 public class ChangingKeys {
 
     public static void main(String[] args) {
@@ -12,6 +14,8 @@ public class ChangingKeys {
 
         char firstKey = str.toCharArray()[0];
         firstKey = Character.toLowerCase(firstKey);
+        System.out.println(firstKey);
+
         int count = 0;
 
         for(int i = 1; i < str.length() ; i++){

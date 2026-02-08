@@ -4,7 +4,7 @@ public class PrintDoubleCharacters {
 
     public static void main(String[] args) {
 
-        String str = "";
+        String str = "Hello World";
         displayDoubleChars(str);
     }
 

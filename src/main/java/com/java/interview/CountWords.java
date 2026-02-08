@@ -4,7 +4,7 @@ public class CountWords {
 
     public static void main(String[] args) {
 
-        String input = "";
+        String input = "Hello world hi";
 
         System.out.println(countWords(input));
     }

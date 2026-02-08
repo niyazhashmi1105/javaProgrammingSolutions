@@ -7,7 +7,7 @@ public class CountCharacterOccurrence {
         String str = "Java is object oriented programming language";
         //System.out.println(str.length());
         //System.out.println( str.replaceAll("a", "").length());
-        System.out.println(getCharacterCount(str,"g"));
+        System.out.println(getCharacterCount(str,"z"));
     }
 
     static int getCharacterCount(String str, String stringToReplace){

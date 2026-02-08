@@ -10,7 +10,7 @@ public class FirstNonRepeatedCharacter {
         String str = "jjava is sweet programming";
 
         Map<Character, Integer> countCharacterMap = new LinkedHashMap<>();
-        int count =1;
+        int count = 1;
 
         for(int i=0;i<str.length();i++){
             if(!countCharacterMap.containsKey(str.charAt(i))){

@@ -6,7 +6,7 @@ import java.util.Set;
 public class LongestUniqueSubString {
 
     public static void main(String[] args) {
-        String str = "Java is great";
+        String str = "Java is greater language";
         getLongestUniqueSubstring(str);
     }
 

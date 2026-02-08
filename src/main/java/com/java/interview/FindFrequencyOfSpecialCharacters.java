@@ -7,7 +7,7 @@ public class FindFrequencyOfSpecialCharacters {
 
     public static void main(String[] args) {
 
-        String str = "1abc@#$&*^(#@$";
+        String str = "1abc2345cde&*()^%$#@!@";
         getSpecialCharactersCount(str);
     }
 

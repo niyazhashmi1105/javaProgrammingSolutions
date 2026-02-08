@@ -9,7 +9,7 @@ public class DuplicateWordsCount {
     {
         //count words in a string
 
-        String str = "Java java is is a great great programming language language";
+        String str = "Java is is a great great programming language language";
         Map<String,Integer> wordCountMap = new LinkedHashMap<>();
         String [] words = str.split(" ");
 

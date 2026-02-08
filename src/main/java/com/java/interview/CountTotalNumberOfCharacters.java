@@ -19,8 +19,6 @@ public class CountTotalNumberOfCharacters {
                 count++;
             }
         }
-
-
         System.out.println("Count is "+ count);
     }
 }

@@ -9,7 +9,7 @@ public class FibonacciSeries {
         int third;
         int num = 0;
 
-        while(num <= 25){
+        while(num <= 250){
 
             System.out.print(first+" ");
             third = first + second;

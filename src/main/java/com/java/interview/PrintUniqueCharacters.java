@@ -20,10 +20,11 @@ public class PrintUniqueCharacters {
         for(char ch: str.toCharArray()){
             if(!set.contains(ch)){
                 set.add(ch);
+                sb.append(ch).append(" ");
             }
 
         }
-        sb.append(set).append(" ");
+        //sb.append(set).append(" ");
         System.out.println(sb);
 
     }

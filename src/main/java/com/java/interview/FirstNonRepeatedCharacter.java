@@ -7,7 +7,7 @@ public class FirstNonRepeatedCharacter {
 
     public static void main(String[] args) {
 
-        String str = "jjava is sweet programming";
+        String str = "python is sweet programming";
 
         Map<Character, Integer> countCharacterMap = new LinkedHashMap<>();
         int count = 1;

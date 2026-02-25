@@ -9,12 +9,10 @@ public class RotateArrayLeftByKthPosition {
         int [] a = {1,2,3,4,5};
         int k = 2;
         k = k % a.length;
-        //System.out.println(k);
+        System.out.println(k);
         a = rotateArray(a, 0, k-1); // Reverse first 2 elements
-        //System.out.println(Arrays.toString(a));
         a = rotateArray(a, k,a.length-1); // Reverse remaining elements
-        //System.out.println(Arrays.toString(a));
-        a = rotateArray(a,0,a.length-1); // Reverse whole array
+       // a = rotateArray(a,0,a.length-1); // Reverse whole array
         System.out.println(Arrays.toString(a));
     }
 

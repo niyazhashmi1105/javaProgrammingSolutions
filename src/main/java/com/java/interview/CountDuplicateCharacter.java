@@ -16,14 +16,14 @@ public class CountDuplicateCharacter {
             if (!charCountMap.containsKey(c)) {
                 charCountMap.put(c, 1);
             } else {
-                charCountMap.put(c, charCountMap.get(c) + 1);
+                charCountMap.put(c, charCountMap.getOrDefault(c,0)+1);
             }
         }
 
         //System.out.println(charCountMap.keySet());
 
         for(Character key: charCountMap.keySet()){
-            if(charCountMap.get(key) > 1){
+            if(charCountMap.get(key) >= 1){
                 System.out.println("Key "+key+" : "+ charCountMap.get(key));
             }
         }

@@ -11,9 +11,9 @@ public class RotateArrayRightByKthPosition {
         int left = 0;
         int right = a.length-1;
         k = k % a.length;
-        a = rotateArrayRight(a,left,right);
-        a = rotateArrayRight(a,0, k-1);
-        a = rotateArrayRight(a,k,a.length-1);
+        a = rotateArrayRight(a,left,right); // Reverse whole array
+        a = rotateArrayRight(a,0, k-1); // Reverse First 3 elements
+        a = rotateArrayRight(a,k,a.length-1); // Reverse Remaining elements
         System.out.println(Arrays.toString(a));
 
     }

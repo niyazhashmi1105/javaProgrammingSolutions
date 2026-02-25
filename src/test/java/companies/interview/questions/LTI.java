@@ -45,7 +45,7 @@ public class LTI {
             connection.connect();
             int responseCode = connection.getResponseCode();
 
-            if (responseCode >= 400) {
+            if (responseCode == 404) {
                 System.out.println("Broken Link : " + url+" with status code: "+ responseCode);
 
             } else if (responseCode == 200) {
@@ -57,6 +57,7 @@ public class LTI {
 
         }catch(Exception e) {
             System.err.println("caught exception " + e.getMessage());
+            System.exit(0);
         }
     }
 }

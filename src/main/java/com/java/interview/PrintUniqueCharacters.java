@@ -9,7 +9,7 @@ public class PrintUniqueCharacters {
     public static void main(String[] args) {
 
         String str = "Welcome to Java World";
-        getUnqiueCharacters(str);
+        getUnqiueCharacters(str); // Remove duplicate characters
     }
 
     private static void getUnqiueCharacters(String str) {
@@ -20,7 +20,7 @@ public class PrintUniqueCharacters {
         for(char ch: str.toCharArray()){
             if(!set.contains(ch)){
                 set.add(ch);
-                sb.append(ch).append(" ");
+                sb.append(ch);
             }
 
         }

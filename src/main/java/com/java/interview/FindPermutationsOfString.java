@@ -9,11 +9,13 @@ public class FindPermutationsOfString {
     }
 
     private static void findPermutation(String str, String prefix) {
-        if(str.length()==0){
-            System.out.println(prefix);
+
+        if(str.length() == 0){
+            System.out.println("Please enter valid string");
         }
         else{
-            for(int i=0;i<str.length();i++){
+
+            for(int i = 0; i < str.length(); i++){
                 String rem = str.substring(0,i)+str.substring(i+1);
                 findPermutation(rem, prefix+str.charAt(i));
             }

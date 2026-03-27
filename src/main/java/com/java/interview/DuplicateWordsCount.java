@@ -18,7 +18,7 @@ public class DuplicateWordsCount {
             if(!wordCountMap.containsKey(word)) {
                 wordCountMap.put(word, 1);
             } else {
-                wordCountMap.put(word, wordCountMap.get(word) + 1);
+                wordCountMap.put(word, wordCountMap.getOrDefault(word,0) + 1);
             }
         }
 

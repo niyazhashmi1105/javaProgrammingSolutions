@@ -4,26 +4,26 @@ public class Pangram {
 
     public static void main(String[] args) {
 
-        String input = "The quick brown fox jumps over the lazy dog";
+        String input = "The quick brown fox jumps over the lazy";
         boolean result = isPangram(input);
 
         if(result){
-         System.out.println("It's a pangram");
+         System.out.println("It's a Pangram String");
         }
         else{
-            System.out.println("It's not a pangram");
+            System.out.println("It's not a Pangram String");
         }
     }
 
     private static boolean isPangram(String input){
         input = input.toLowerCase();
 
-        if(input.length()<26){
+        if(input.length() < 26){
             return false;
         }
 
-        for(char i= 'a';i<='z';i++){
-            if(input.indexOf(i)<0){
+        for(char i = 'a';i <= 'z';i++){
+            if(input.indexOf(i) < 0){
                 return false;
             }
         }

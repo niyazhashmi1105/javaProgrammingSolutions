@@ -7,7 +7,7 @@ public class SecondMostFrequentCharacter {
 
     public static void main(String[] args) {
 
-        String input = "aabbbc";
+        String input = "aaabbbc";
         Map<Character,Integer> map = new HashMap<>();
         int firstMaxFrequency = Integer.MIN_VALUE;
         int secondMaxFrequency = Integer.MIN_VALUE;

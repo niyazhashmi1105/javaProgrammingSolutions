@@ -12,7 +12,7 @@ public class StringManipulation2 {
                 sb.append(ch);
             }
             else if(Character.isDigit(ch)){
-                sum = sum + Character.getNumericValue(ch);
+                sum += Character.getNumericValue(ch);
             }
         }
         sb.append(" ");

@@ -18,6 +18,7 @@ public class StringManipulation3 {
             }
         }
 
+        System.out.println(list);
         int index = list.size()-1;
 
         for(char ch:input.toCharArray()){

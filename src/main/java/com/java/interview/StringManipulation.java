@@ -8,6 +8,7 @@ public class StringManipulation {
         String input = String.valueOf(number);
 
         int indexOfDecimal = input.indexOf(".");
+        System.out.println(input.length()+" "+indexOfDecimal);
 
         System.out.println("Number of Digits After Decimal = "+(input.length()-indexOfDecimal-1));
     }

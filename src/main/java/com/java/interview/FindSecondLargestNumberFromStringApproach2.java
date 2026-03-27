@@ -7,7 +7,7 @@ public class FindSecondLargestNumberFromStringApproach2 {
     public static void main(String[] args) {
 
         String input = "0111a1b22c036d5";
-        //findSecondLargestNumber(input);
+        findSecondLargestNumber(input);
         getSecondLargestNumber(input);
     }
 
@@ -52,7 +52,7 @@ public class FindSecondLargestNumberFromStringApproach2 {
             }
 
         }
-        System.out.println(secondLargest);
+        System.out.println("second largest number: "+ secondLargest);
 
     }
 }

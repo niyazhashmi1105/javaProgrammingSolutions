@@ -6,8 +6,8 @@ public class Anagram {
 
     public static void main(String[] args) {
 
-        String str1 = "stop";
-        String str2 = "Tops";
+        String str1 = "silent";
+        String str2 = "listen";
 
 
         char []ch1 = str1.toLowerCase().toCharArray();

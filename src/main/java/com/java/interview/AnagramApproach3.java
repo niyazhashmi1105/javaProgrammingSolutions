@@ -9,7 +9,7 @@ public class AnagramApproach3 {
     public static void main(String[] args) {
 
         String str1 = "TOPs";
-        String str2 = "stop";
+        String str2 = "stope";
         System.out.println(isAnagram(str1,str2));
     }
     private static boolean isAnagram(String str1, String str2){

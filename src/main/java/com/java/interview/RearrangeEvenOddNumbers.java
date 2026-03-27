@@ -31,14 +31,14 @@ public class RearrangeEvenOddNumbers {
 
         }
 
-        System.out.println("Arrays Before Sorting: "+ Arrays.toString(a));
+        System.out.println("Arrays Before Sorting After Rearranging Even/Odd Nos: "+ Arrays.toString(a));
         while(evenEnd < a.length-1 && a[evenEnd] % 2 == 0){
             evenEnd++;
         }
         System.out.println(evenEnd);
         Arrays.sort(a,0,evenEnd);
         Arrays.sort(a, evenEnd,a.length-1);
-        System.out.println("Arrays After Sorting: "+ Arrays.toString(a));
+        System.out.println("Arrays After Sorting After Rearranging Even/Odd Nos: "+ Arrays.toString(a));
 
     }
 }

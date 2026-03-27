@@ -10,12 +10,12 @@ public class FindLeaderNumberInArray {
     private static void getLeaderNumber(int[] arr) {
 
         int maxRight = arr[arr.length-1];
-        System.out.println(maxRight);
+        System.out.print(maxRight+" ");
 
         for(int index = arr.length-2; index >=0 ;index--){
             if(arr[index] > maxRight){
                 maxRight = arr[index];
-                System.out.println(maxRight);
+                System.out.print(maxRight+" ");
             }
         }
     }

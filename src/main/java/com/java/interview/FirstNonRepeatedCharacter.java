@@ -10,18 +10,15 @@ public class FirstNonRepeatedCharacter {
         String str = "python is sweet programming";
 
         Map<Character, Integer> countCharacterMap = new LinkedHashMap<>();
-        int count = 1;
+        int count = 0;
 
         for(int i=0;i<str.length();i++){
-            if(!countCharacterMap.containsKey(str.charAt(i))){
-                countCharacterMap.put(str.charAt(i),count);
-            }
-            else{
-                countCharacterMap.put(str.charAt(i),countCharacterMap.get(str.charAt(i))+1);
-            }
+            countCharacterMap.put(str.charAt(i), countCharacterMap.getOrDefault(str.charAt(i), count) + 1);
         }
 
+
         for(Map.Entry<Character,Integer> entry: countCharacterMap.entrySet()){
+
             if(entry.getValue() == 1){
                 System.out.println("First Non Repeated Character: "+entry.getKey());
                 break;

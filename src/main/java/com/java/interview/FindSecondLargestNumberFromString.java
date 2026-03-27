@@ -14,14 +14,16 @@ public class FindSecondLargestNumberFromString {
         int num;
         int first = Integer.MIN_VALUE;
         int second = Integer.MIN_VALUE;
+
         for(char ch : data){
             if(Character.isDigit(ch)){
-                num = ch - '0';
+                num = Character.getNumericValue(ch);
+
                 if(num > first){
                     second = first;
                     first = num;
                 }
-                else if(num > second && num < second){
+                else if(num > second && num != first){
                     second = num;
                 }
             }

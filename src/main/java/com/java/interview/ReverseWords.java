@@ -11,12 +11,12 @@ public class ReverseWords {
     public static String reverseWords(String str){
 
         String [] arr = str.split(" ");
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for(int i=arr.length-1;i>=0;i--){
-            result += arr[i] + " ";
+            result.append(arr[i]).append(" ");
         }
-        return result;
+        return result.toString();
 
     }
 

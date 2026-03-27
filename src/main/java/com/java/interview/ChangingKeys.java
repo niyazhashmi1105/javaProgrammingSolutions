@@ -6,7 +6,7 @@ public class ChangingKeys {
 
     public static void main(String[] args) {
 
-        String str = "BabaABcCD";
+        String str = "BababAD";
         System.out.println(getKeysChangeCount(str));
     }
 
@@ -14,7 +14,6 @@ public class ChangingKeys {
 
         char firstKey = str.toCharArray()[0];
         firstKey = Character.toLowerCase(firstKey);
-        System.out.println(firstKey);
 
         int count = 0;
 

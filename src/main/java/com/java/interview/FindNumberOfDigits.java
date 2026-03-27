@@ -4,7 +4,7 @@ public class FindNumberOfDigits {
 
     public static void main(String[] args) {
 
-        int num = 0;
+        int num = 5535;
         System.out.println(findNumberOfDigit(num));
     }
 
@@ -12,11 +12,11 @@ public class FindNumberOfDigits {
 
         int count = 0;
         if(num < 0 || num == 0){
-            return -1;
+            return 1;
         }
         else{
              while( num > 0 ){
-                 num = num / 10;
+                 num /=  10;
                  count++;
              }
         }

@@ -13,8 +13,8 @@ public class ReverseWordsApproach2 {
 
     public static String reverseWords(String []str){
 
-        int left = 1;
-        int right = str.length-2;
+        int left = 0;
+        int right = str.length-1;
         String temp;
 
         while(left < right){

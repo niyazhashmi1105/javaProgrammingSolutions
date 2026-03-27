@@ -7,7 +7,7 @@ public class ConvertRomanToInteger {
 
     public static void main(String[] args) {
 
-        String str ="MCXII";
+        String str ="CMXII";
         System.out.println(convertRomanToInteger(str));
     }
 
@@ -17,13 +17,14 @@ public class ConvertRomanToInteger {
         romanMap.put('I',1);
         romanMap.put('V',5);
         romanMap.put('X',10);
+        romanMap.put('L',50);
         romanMap.put('C',100);
         romanMap.put('M',1000);
 
         int result = 0;
         int previousValue = 0;
 
-        for(int i= str.length()-1 ;i >= 0; i--){
+        for(int i = str.length()-1 ;i >= 0; i--){
 
             char currentChar = str.charAt(i);
             int  currentValue = romanMap.get(currentChar);

@@ -7,7 +7,7 @@ public class RotateArrayRightByKthPosition {
     public static void main(String[] args) {
 
         int [] a = {1,2,3,4,5,6,7};
-        int k = 3;
+        int k = 2;
         int left = 0;
         int right = a.length-1;
         k = k % a.length;

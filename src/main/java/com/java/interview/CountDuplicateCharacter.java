@@ -13,17 +13,17 @@ public class CountDuplicateCharacter {
 
         Map<Character,Integer> charCountMap = new LinkedHashMap<>();
         for (char c : ch) {
-            if (!charCountMap.containsKey(c)) {
-                charCountMap.put(c, 1);
-            } else {
+            if (charCountMap.containsKey(c)) {
                 charCountMap.put(c, charCountMap.getOrDefault(c,0)+1);
+            } else {
+                    charCountMap.put(c, 1);
             }
         }
 
-        //System.out.println(charCountMap.keySet());
+        System.out.println(charCountMap.keySet());
 
         for(Character key: charCountMap.keySet()){
-            if(charCountMap.get(key) >= 1){
+            if(charCountMap.get(key) > 1){
                 System.out.println("Key "+key+" : "+ charCountMap.get(key));
             }
         }

@@ -4,7 +4,7 @@ public class EvenOrOdd {
 
     public static void main(String[] args) {
 
-        int num = 8;
+        int num = 87;
 
         while(num > 1){
             num = num-2;

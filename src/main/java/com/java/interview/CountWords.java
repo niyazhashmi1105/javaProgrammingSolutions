@@ -10,7 +10,7 @@ public class CountWords {
     }
 
     private static int countWords(String str) {
-        int count =0;
+        int count = 1;
 
         if(str.isEmpty()){
             System.out.println("String is empty, please enter valid string with spaces");

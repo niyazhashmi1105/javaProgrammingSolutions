@@ -12,8 +12,8 @@ public class SecondLargestSmallest {
         List<Integer> list = Arrays.asList(arr);
 
         Collections.sort(list);
-        System.out.println(list.size());
-        System.out.println(list.get(list.size()-1));
+        //System.out.println(list.size());
+        //System.out.println(list.get(list.size()-1));
         //System.out.println("Second Largest: " + list.get(list.size() - 2));
         //System.out.println("Second Smallest: " + list.get(1));
 
@@ -21,7 +21,7 @@ public class SecondLargestSmallest {
                                     .distinct()
                                     .sorted()
                                     .skip(arr.length-2)
-                                    .findFirst().orElse(-1);
+                                    .findFirst().orElse(0);
 
 
         int secondSmallest = Arrays.stream(arr)
@@ -29,7 +29,7 @@ public class SecondLargestSmallest {
                                     .sorted()
                                     .skip(1)
                                     .findFirst()
-                                    .orElse(-1);
+                                    .orElse(0);
 
         System.out.println("Second Largest: " +secondLargest);
         System.out.println("Second Smallest: " + secondSmallest);

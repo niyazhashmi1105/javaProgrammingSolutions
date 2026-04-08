@@ -15,8 +15,8 @@ public class StringManipulation2 {
                 sum += Character.getNumericValue(ch);
             }
         }
-        sb.append(" ");
-        sb.append(sum);
+        sb.append(" ").append(sum);
+        //sb.append(sum);
         System.out.println(sb);
     }
 }

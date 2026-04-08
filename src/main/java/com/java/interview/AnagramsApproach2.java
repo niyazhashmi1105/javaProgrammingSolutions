@@ -18,7 +18,9 @@ public class AnagramsApproach2 {
         }
 
         for(int i = 0; i < str1.length();i++){
+            System.out.println(charCount[str1.charAt(i)]++);
             charCount[str1.charAt(i)]++;
+            System.out.println(charCount[str2.charAt(i)]--);
             charCount[str2.charAt(i)]--;
 
         }

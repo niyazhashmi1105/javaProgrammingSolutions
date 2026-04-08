@@ -12,7 +12,7 @@ public class MaxProductTripletsSolution1 {
         int n = a.length;
 
         if( n < 3 ){
-            System.err.println("Number mt be greater than 3");
+            System.err.println("Number must be greater than 3");
         }
 
         System.out.println(Arrays.toString(a));

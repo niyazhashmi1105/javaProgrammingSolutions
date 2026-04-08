@@ -11,6 +11,7 @@ public class ReverseOnlyFirsLastCharacterofFirstWord {
 
         System.out.println("Original String: "+ input);
         StringBuilder reverseString = new StringBuilder();
+
         if(input == null || input.isEmpty()){
             System.out.println("Cannot reverse String");
         }

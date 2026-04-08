@@ -11,7 +11,7 @@ public class SecondLargestSmallest {
         Integer[] arr = {12, 35, 1, 10, 34, 33};
         List<Integer> list = Arrays.asList(arr);
 
-        Collections.sort(list);
+        //Collections.sort(list);
         //System.out.println(list.size());
         //System.out.println(list.get(list.size()-1));
         //System.out.println("Second Largest: " + list.get(list.size() - 2));

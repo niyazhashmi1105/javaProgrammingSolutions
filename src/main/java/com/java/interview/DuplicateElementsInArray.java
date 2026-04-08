@@ -22,7 +22,7 @@ public class DuplicateElementsInArray {
 
         for(int key: map.keySet()) {
             if (map.get(key) > 1) {
-                System.out.println("Duplicate Element: "+key);
+                System.out.println("Duplicate Element: "+key+" ---> "+map.get(key));
             }
         }
     }

@@ -1,5 +1,7 @@
 package com.java.interview;
 
+import java.sql.SQLOutput;
+
 public class FindPermutationsOfString {
 
     public static void main(String[] args) {
@@ -10,15 +12,10 @@ public class FindPermutationsOfString {
 
     private static void findPermutation(String str, String prefix) {
 
-        if(str.length() == 0){
-            System.out.println("Please enter valid string");
-        }
-        else{
-
             for(int i = 0; i < str.length(); i++){
                 String rem = str.substring(0,i)+str.substring(i+1);
                 findPermutation(rem, prefix+str.charAt(i));
             }
-        }
+
     }
 }

@@ -7,7 +7,7 @@ import java.util.Set;
 public class MissingNumber2 {
 
     public static void main(String[] args) {
-        int [] arr = {1, 3,5,6,7};
+        int [] arr = {1,3,5,6,7};
         int max = arr.length;
         Arrays.sort(arr);
         Set<Integer> hashSet = new HashSet<>();

@@ -14,6 +14,9 @@ public class AnagramApproach3 {
     }
     private static boolean isAnagram(String str1, String str2){
 
+
+        if(str1.length() != str2.length()) return false;
+
         str1 = str1.replaceAll("\\s","").toLowerCase();
         str2 = str2.replaceAll("\\s","").toLowerCase();
 

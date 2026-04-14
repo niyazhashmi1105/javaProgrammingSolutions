@@ -6,7 +6,7 @@ public class MaxProductTripletsSolution1 {
 
     public static void main(String[] args) {
 
-        int [] a = {-10,-3,5,6,-20 };
+        int [] a = {1,3,5,6,20 };
 
         Arrays.sort(a);
         int n = a.length;

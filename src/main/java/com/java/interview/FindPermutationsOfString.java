@@ -12,7 +12,12 @@ public class FindPermutationsOfString {
 
     private static void findPermutation(String str, String prefix) {
 
-            for(int i = 0; i < str.length(); i++){
+        if (str.isEmpty()) {
+            System.out.println(prefix);
+            return;
+        }
+
+        for(int i = 0; i < str.length(); i++){
                 String rem = str.substring(0,i)+str.substring(i+1);
                 findPermutation(rem, prefix+str.charAt(i));
             }

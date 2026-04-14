@@ -13,7 +13,7 @@ public class CountCharacterOccurrence {
     static int getCharacterCount(String str){
 
 
-        return str.length()- str.replaceAll("a","").length();
+        return str.length()- str.replaceAll("o","").length();
 
     }
 }

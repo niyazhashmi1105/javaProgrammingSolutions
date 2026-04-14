@@ -30,6 +30,10 @@ public class EmpRunner {
         List<Employee> listOfSortedEmployees = employeeList.stream().sorted((el1, el2) -> Double.compare(el1.getSalary(), el2.getSalary())).collect(Collectors.toList());
 
         System.out.println(listOfSortedEmployees);
+
+
+        List<Employee> employeeSortingBasedOnName = employeeList.stream().sorted((en1, en2)-> en1.getName().compareTo(en2.getName())).collect(Collectors.toList());
+        System.out.println(employeeSortingBasedOnName);
     }
 
 }

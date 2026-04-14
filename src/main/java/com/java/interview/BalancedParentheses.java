@@ -6,7 +6,7 @@ public class BalancedParentheses {
 
     public static void main(String[] args) {
 
-        String input = "[{()}";
+        String input = "[{()}]";
         System.out.println(checkValidParentheses(input));
     }
 

@@ -12,7 +12,7 @@ public class EmailValidator {
 
         List<String> emails = new ArrayList<>();
 
-        Pattern pattern = Pattern.compile("[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}");
+        Pattern pattern = Pattern.compile("[A-Za-z0-9._%+-]+@[A-Za-z]+\\.[A-Za-z]{2,}");
         Matcher matcher = pattern.matcher(input);
 
         while (matcher.find()) {

@@ -6,7 +6,7 @@ import java.util.Set;
 public class LongestUniqueSubString {
 
     public static void main(String[] args) {
-        String str = "programming language"; //progamin,langue
+        String str = "programming"; //progamin,langue
         System.out.println(getLongestUniqueSubstring(str));
 
     }

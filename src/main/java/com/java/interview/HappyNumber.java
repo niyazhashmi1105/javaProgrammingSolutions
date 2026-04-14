@@ -7,7 +7,7 @@ public class HappyNumber {
 
     public static void main(String[] args) {
 
-        int num = 25;
+        int num = 19;
         System.out.println(isHappy(num));
     }
 

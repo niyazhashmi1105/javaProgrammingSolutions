@@ -16,6 +16,7 @@ public class RemoveSpaces {
             if(str.charAt(i) != ' '){
                 sb.append(str.charAt(i));
             }
+
         }
         System.out.println(sb.toString());
 

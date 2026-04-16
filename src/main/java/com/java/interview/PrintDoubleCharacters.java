@@ -11,7 +11,7 @@ public class PrintDoubleCharacters {
     private static void displayDoubleChars(String str) {
 
         StringBuilder sb = new StringBuilder();
-        if(str.isEmpty() || str.length() <=0)
+        if(str.isEmpty() || str.length() ==0)
         {
             System.out.println("String is empty.Please enter string again");
         }

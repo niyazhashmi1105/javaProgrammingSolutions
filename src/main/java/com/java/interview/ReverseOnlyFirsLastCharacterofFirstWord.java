@@ -17,6 +17,8 @@ public class ReverseOnlyFirsLastCharacterofFirstWord {
         }
         else{
            String []words = input.split(" ",2);
+            System.out.println(words[0]);
+
            char [] charArray = words[0].toCharArray();
             int left = 0;
             int right = charArray.length-1;

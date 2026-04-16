@@ -4,7 +4,7 @@ public class Pangram {
 
     public static void main(String[] args) {
 
-        String input = "The quick brown fox jumps over the lazy";
+        String input = "The quick brown fox jumps over the lazy dog";
         boolean result = isPangram(input);
 
         if(result){
@@ -23,7 +23,7 @@ public class Pangram {
         }
 
         for(char i = 'a';i <= 'z';i++){
-            if(input.indexOf(i) < 0){
+            if(input.indexOf(i) == -1){
                 return false;
             }
         }

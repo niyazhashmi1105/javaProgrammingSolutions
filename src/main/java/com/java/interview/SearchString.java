@@ -4,7 +4,7 @@ public class SearchString {
 
     public static void main(String[] args) {
 
-        String input = "I joined ABC123";
+        String input = "I joined ABC 123";
         String searchString = "ABC";
         searchString(input,searchString);
     }

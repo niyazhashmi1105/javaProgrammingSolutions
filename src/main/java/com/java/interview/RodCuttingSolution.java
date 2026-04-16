@@ -23,9 +23,7 @@ public class RodCuttingSolution {
             int shortest = rodList.get(0);
             List<Integer> next = new ArrayList<>();
             for(int rod:rodList){
-                if(rod == shortest){
-                    //discard
-                }
+                if(rod == shortest){}
                 else{
                     next.add(rod-shortest);
                 }

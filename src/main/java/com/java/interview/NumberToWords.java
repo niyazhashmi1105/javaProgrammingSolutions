@@ -33,9 +33,9 @@ public class NumberToWords {
     }
 
     public static void main(String[] args) {
-        int num = 7;
+        int num = 786;
         //System.out.println(convert(num));
-        System.out.println(convertUsingMap(545));
+        System.out.println(convertUsingMap(num));
     }
 
 

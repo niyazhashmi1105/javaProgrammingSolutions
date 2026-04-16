@@ -19,10 +19,10 @@ public class SeparateAlphabetsDigits {
             if(Character.isDigit(currentChar)){
                 digits.append(currentChar);
             }
-            else if(Character.isAlphabetic(currentChar)){
+            else if(Character.isLetter(currentChar)){
                 alphabets.append(currentChar);
             }
-            else if(!Character.isAlphabetic(currentChar) && !Character.isDigit(currentChar)){
+            else if(!Character.isLetter(currentChar) && !Character.isDigit(currentChar)){
                 specialCharacters.append(currentChar);
             }
         }

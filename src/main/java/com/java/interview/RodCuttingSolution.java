@@ -9,7 +9,7 @@ public class RodCuttingSolution {
     public static void main(String[] args) {
 
         int [] rods = {1,1,3,4};
-        Arrays.sort(rods);
+        //Arrays.sort(rods);
 
         List<Integer> rodList = new ArrayList<>();
         List<Integer> result = new ArrayList<>();

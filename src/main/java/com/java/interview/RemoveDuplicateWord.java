@@ -12,11 +12,13 @@ public class RemoveDuplicateWord {
         String str = "how are are you you";
 
         String [] inputArr = str.split(" ");
+        Set<String> duplicateSet = new LinkedHashSet<>();
 
-        Set<String> duplicateSet = new LinkedHashSet<>(Arrays.asList(inputArr));
+        for (String s : inputArr) {
+            duplicateSet.add(s);
 
-        for (String s : duplicateSet) {
-            System.out.print(s + " ");
         }
+        String result = String.join(" ",duplicateSet);
+        System.out.println(result);
     }
 }

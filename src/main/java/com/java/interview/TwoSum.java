@@ -9,7 +9,7 @@ public class TwoSum {
     public static void main(String[] args) {
 
         int a[] = {2,11,7,15};
-        int target = 27;
+        int target = 18;
         System.out.println(Arrays.toString(findTwoSum(a, target)));
     }
 

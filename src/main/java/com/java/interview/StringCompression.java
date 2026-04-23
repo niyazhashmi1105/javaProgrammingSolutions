@@ -17,6 +17,7 @@ public class StringCompression {
                 count = 1;
             }
         }
+        //last character
         sb.append(input.charAt(input.length()-1));
         sb.append(count);
         System.out.println(sb);

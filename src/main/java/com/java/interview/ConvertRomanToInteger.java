@@ -19,6 +19,7 @@ public class ConvertRomanToInteger {
         romanMap.put('X',10);
         romanMap.put('L',50);
         romanMap.put('C',100);
+        romanMap.put('D',500);
         romanMap.put('M',1000);
 
         int result = 0;

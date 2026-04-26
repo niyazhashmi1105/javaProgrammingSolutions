@@ -8,7 +8,14 @@ public class Calculator {
         return a+b;
     }
 
+    private String message(String message){
+       return "Private Method: "+ message;
+    }
     public static void demo(){
         System.out.println("demo");
+    }
+
+    Calculator(){
+        System.out.println("Private Constructor");
     }
 }

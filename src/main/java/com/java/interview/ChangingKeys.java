@@ -6,7 +6,7 @@ public class ChangingKeys {
 
     public static void main(String[] args) {
 
-        String str = "BababAD";
+        String str = "BaabbabAD";
         System.out.println(getKeysChangeCount(str));
     }
 

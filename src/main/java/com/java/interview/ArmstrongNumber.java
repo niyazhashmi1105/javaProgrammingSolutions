@@ -4,7 +4,7 @@ public class ArmstrongNumber {
 
     public static void main(String[] args) {
 
-        int num = 153;
+        int num = 155;
         System.out.println(isArmstrongNumber(num));
     }
 
@@ -20,11 +20,6 @@ public class ArmstrongNumber {
             digit /= 10;
         }
 
-        if(arm == num){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return arm == num;
     }
 }

@@ -1,5 +1,7 @@
 package com.java.interview;
 
+import java.util.Arrays;
+
 public class AnagramsApproach2 {
 
     public static void main(String[] args) {
@@ -18,12 +20,12 @@ public class AnagramsApproach2 {
         }
 
         for(int i = 0; i < str1.length();i++){
-            System.out.println(charCount[str1.charAt(i)]++);
+
             charCount[str1.charAt(i)]++;
-            System.out.println(charCount[str2.charAt(i)]--);
             charCount[str2.charAt(i)]--;
 
         }
+        System.out.println(Arrays.toString(charCount));
 
         for(int count : charCount){
             if( count != 0 ){

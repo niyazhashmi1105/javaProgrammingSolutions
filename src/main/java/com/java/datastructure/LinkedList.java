@@ -13,6 +13,10 @@ public class LinkedList {
         this.data = data;
     }
 
+    public int getData() {
+        return data;
+    }
+
     public static void main(String[] args) {
         LinkedList head = new LinkedList(10);
         head.next = new LinkedList(20);

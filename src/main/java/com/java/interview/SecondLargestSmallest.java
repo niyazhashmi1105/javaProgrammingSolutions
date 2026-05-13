@@ -1,5 +1,6 @@
 package com.java.interview;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -8,8 +9,7 @@ public class SecondLargestSmallest {
 
     public static void main(String[] args) {
 
-        Integer[] arr = {12, 35, 1, 10, 34, 33};
-        List<Integer> list = Arrays.asList(arr);
+        int[] arr = {12, 35, 1, 10, 34, 33};
 
         //Collections.sort(list);
         //System.out.println(list.size());

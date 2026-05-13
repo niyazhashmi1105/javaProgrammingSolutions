@@ -25,6 +25,7 @@ public class SumOfNumbersinAlphanumeric {
                 }
             }
         }
+        //last integer values
         if(!sb.isEmpty()) {
             sum = sum + Integer.parseInt(sb.toString());
         }

@@ -19,9 +19,7 @@ public class SecondMostFrequentCharacter {
         for(Map.Entry<Character,Integer> entry: map.entrySet()){
 
             int currentFrequency = entry.getValue();
-
             if(currentFrequency > firstMaxFrequency){
-
                 secondMaxFrequency = firstMaxFrequency;
                 firstMaxFrequency = currentFrequency;
             }

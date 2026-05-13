@@ -7,8 +7,8 @@ public class AnagramApproach3 {
 
     public static void main(String[] args) {
 
-        String str1 = "TOPss";
-        String str2 = "stope";
+        String str1 = "TOPs";
+        String str2 = "stop";
         System.out.println(isAnagram(str1,str2));
     }
     private static boolean isAnagram(String str1, String str2){

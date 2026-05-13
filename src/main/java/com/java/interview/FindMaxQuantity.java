@@ -19,10 +19,10 @@ public class FindMaxQuantity {
             hmap.put(name, hmap.getOrDefault(name,0)+quantity);
         }
 
-        for(Map.Entry<String,Integer> entrySet: hmap.entrySet()){
-            if(entrySet.getValue() > maxQuantity){
-                maxQuantity = entrySet.getValue();
-                productName = entrySet.getKey();
+        for(Map.Entry<String,Integer> entry: hmap.entrySet()){
+            if(entry.getValue() > maxQuantity){
+                maxQuantity = entry.getValue();
+                productName = entry.getKey();
             }
         }
         System.out.println(productName+" "+maxQuantity);

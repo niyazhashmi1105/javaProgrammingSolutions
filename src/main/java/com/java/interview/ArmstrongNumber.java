@@ -12,7 +12,7 @@ public class ArmstrongNumber {
 
         int digit = num;
         int arm = 0;
-        int number = 0;
+        int number;
 
         while(digit > 0){
             number = digit % 10;

@@ -6,7 +6,7 @@ public class StringManipulation4 {
 
         String input = "$niyaz^hashmi123";
 
-        String result = input.replaceAll("[^a-zA-Z]"," ");
+        String result = input.replaceAll("[^a-zA-Z]+"," ");
 
         System.out.println(result);
 

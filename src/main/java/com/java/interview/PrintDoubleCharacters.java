@@ -15,7 +15,7 @@ public class PrintDoubleCharacters {
         {
             System.out.println("String is empty.Please enter string again");
         }
-        for(int  i=0;i<str.length();i++){
+        for(int i=0;i<str.length();i++){
             sb.append(str.charAt(i)).append(str.charAt(i));
         }
         System.out.println(sb.toString());

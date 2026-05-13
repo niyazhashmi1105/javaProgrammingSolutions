@@ -1,9 +1,5 @@
 package com.java.interview;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-
 public class Employee {
 
     private int id;

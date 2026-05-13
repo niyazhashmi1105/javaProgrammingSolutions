@@ -1,6 +1,7 @@
 package com.java.interview;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,7 +15,7 @@ public class EmpRunner {
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(e1);
         employeeList.add(new Employee(11,"Rashid","DEV",10000));
-        employeeList.add(new Employee(12,"Shazada","DEV",15000));
+        employeeList.add(new Employee(12,"Shahzada","DEV",15000));
         employeeList.add(new Employee(13,"Gaurav","DEVOPS",12500));
         employeeList.add(new Employee(11,"Ashmita","BA",20000));
 
@@ -27,12 +28,12 @@ public class EmpRunner {
         System.out.println("*************************");
 
         System.out.println("Sort employees on the basis of salary");
-        List<Employee> listOfSortedEmployees = employeeList.stream().sorted((el1, el2) -> Double.compare(el1.getSalary(), el2.getSalary())).collect(Collectors.toList());
+        List<Employee> listOfSortedEmployees = employeeList.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).collect(Collectors.toList());
 
         System.out.println(listOfSortedEmployees);
 
 
-        List<Employee> employeeSortingBasedOnName = employeeList.stream().sorted((en1, en2)-> en1.getName().compareTo(en2.getName())).collect(Collectors.toList());
+        List<Employee> employeeSortingBasedOnName = employeeList.stream().sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList());
         System.out.println(employeeSortingBasedOnName);
     }
 

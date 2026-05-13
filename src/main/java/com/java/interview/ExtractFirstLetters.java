@@ -6,7 +6,7 @@ public class ExtractFirstLetters {
         String input = "light- : as+aeather";
 
         // Split on any sequence of non-alphabetic characters
-        String[] tokens = input.split("[^a-zA-Z]+");
+        String[] tokens = input.split("[^a-zA-Z]");
 
         StringBuilder result = new StringBuilder();
 

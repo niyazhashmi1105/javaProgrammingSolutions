@@ -20,15 +20,13 @@ public class RearrangeEvenOddNumbers {
             while(left < right && a[right] % 2 != 0){
                 right--;
             }
-
-            if(left<right){
+            if(left < right){
                 int temp = a[left];
                 a[left] = a[right];
                 a[right] = temp;
                 left++;
                 right--;
             }
-
         }
 
         System.out.println("Arrays Before Sorting After Rearranging Even/Odd Nos: "+ Arrays.toString(a));

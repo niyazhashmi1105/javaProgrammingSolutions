@@ -7,7 +7,6 @@ public class ReplaceVowelsWithX {
         String input ="Name Is";
         System.out.println(replaceVowelsOnlyWithX(input));
     }
-
         private static String replaceVowelsOnlyWithX(String str){
 
         str = str.toLowerCase();
@@ -16,7 +15,6 @@ public class ReplaceVowelsWithX {
         char []ch = str.toCharArray();
         for(char currentChar:ch){
             if(currentChar == 'a'|| currentChar =='e' || currentChar =='i'|| currentChar == 'o'|| currentChar == 'u'){
-
                 sb.append('X');
             }
             else{

@@ -2,7 +2,7 @@ package com.java.interview;
 
 public class MissingChar {
     public static void main(String[] args) {
-        String input = "abdf";
+        String input = "abdf"; //a -97, b-98 d- 100, f-102
 
         for (int i = 0; i < input.length() - 1; i++) {
             char current = input.charAt(i);

@@ -25,7 +25,5 @@ public class SearchString {
         else{
             System.out.println("Input string doesn't contains search string");
         }
-
     }
-
 }

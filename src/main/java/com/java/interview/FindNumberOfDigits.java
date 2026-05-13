@@ -4,7 +4,7 @@ public class FindNumberOfDigits {
 
     public static void main(String[] args) {
 
-        int num = 5535;
+        int num = 553567;
         System.out.println(findNumberOfDigit(num));
     }
 

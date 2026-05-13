@@ -17,8 +17,6 @@ public class ReverseOnlyFirsLastCharacterofFirstWord {
         }
         else{
            String []words = input.split(" ",2);
-            System.out.println(words[0]);
-
            char [] charArray = words[0].toCharArray();
             int left = 0;
             int right = charArray.length-1;
@@ -29,8 +27,8 @@ public class ReverseOnlyFirsLastCharacterofFirstWord {
                 left++;
                 right--;
             }
-            reverseString.append(charArray);
-            System.out.println("Reverse First and Last Character of First Word: "+reverseString+" "+words[1]);
+            reverseString.append(charArray).append(" ").append(words[1]);
+            System.out.println("Reverse First and Last Character of First Word: "+reverseString);
         }
     }
 }

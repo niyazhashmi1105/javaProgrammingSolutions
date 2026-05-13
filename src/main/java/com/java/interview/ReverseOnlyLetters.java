@@ -21,7 +21,6 @@ public class ReverseOnlyLetters {
 
             if(!Character.isLetter(ch[left])){
                 left++;
-
             }
             else if(!Character.isLetter(ch[right])){
                 right--;
@@ -35,7 +34,5 @@ public class ReverseOnlyLetters {
             }
         }
         return new String(ch);
-
-
     }
 }

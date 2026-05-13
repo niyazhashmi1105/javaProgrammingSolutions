@@ -1,7 +1,6 @@
 package com.java.interview;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class RodCuttingSolution {

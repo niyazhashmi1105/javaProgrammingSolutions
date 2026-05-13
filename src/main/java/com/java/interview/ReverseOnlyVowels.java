@@ -6,7 +6,6 @@ public class ReverseOnlyVowels {
     public static void main(String[] args) {
 
         String str = "Hello";
-
         System.out.println(getReverseOnlyVowels(str));
     }
 
@@ -15,14 +14,13 @@ public class ReverseOnlyVowels {
         String vowels = "aeiouAEIOU";
         char []ch = str.toCharArray();
         char temp;
-        int left =0;
+        int left = 0;
         int right = ch.length-1;
 
         while(left < right){
             if(vowels.indexOf(ch[left]) == -1){
                 left++;
             }
-
             else if(vowels.indexOf(ch[right]) == -1){
                 right--;
             }
@@ -34,9 +32,6 @@ public class ReverseOnlyVowels {
                 right--;
             }
         }
-
         return new String(ch);
-
     }
-
 }

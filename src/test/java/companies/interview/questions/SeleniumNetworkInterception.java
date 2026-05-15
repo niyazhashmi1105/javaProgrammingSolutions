@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v142.fetch.Fetch;
-import org.openqa.selenium.devtools.v142.fetch.model.RequestPattern;
-import org.openqa.selenium.devtools.v142.fetch.model.RequestStage;
+import org.openqa.selenium.devtools.v148.fetch.Fetch;
+import org.openqa.selenium.devtools.v148.fetch.model.RequestPattern;
+import org.openqa.selenium.devtools.v148.fetch.model.RequestStage;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.nio.charset.StandardCharsets;
@@ -71,7 +71,5 @@ public class SeleniumNetworkInterception {
         registerBtn.click();
 
         System.out.println("Register button click successfully" );
-
-
     }
 }

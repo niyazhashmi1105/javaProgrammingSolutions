@@ -24,8 +24,10 @@ public class LTI {
 
         WebDriver wd = new ChromeDriver();
         wd.get("https://www.flipkart.com");
-        By links = By.tagName("a");
         WebDriverWait wait = new WebDriverWait(wd,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".b3wTlE"))).click();
+
+        By links = By.tagName("a");
         List<WebElement> allLinks = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(links));
         System.out.println(allLinks.size());
 
@@ -45,7 +47,7 @@ public class LTI {
             connection.connect();
             int responseCode = connection.getResponseCode();
 
-            if (responseCode == 404) {
+            if (responseCode >= 400) {
                 System.out.println("Broken Link : " + url+" with status code: "+ responseCode);
 
             } else if (responseCode == 200) {
@@ -57,7 +59,6 @@ public class LTI {
 
         }catch(Exception e) {
             System.err.println("caught exception " + e.getMessage());
-            System.exit(0);
         }
     }
 }

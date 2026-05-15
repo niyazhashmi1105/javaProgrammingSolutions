@@ -28,6 +28,7 @@ public class DownloadFile {
             prefs.put("download.prompt_for_download",false);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setExperimentalOption("prefs",prefs);
+            chromeOptions.addArguments("--start-maximized");
 
             WebDriver wd = new ChromeDriver(chromeOptions);
             wd.get("https://get.jenkins.io/war-stable/2.528.1/jenkins.war");

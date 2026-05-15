@@ -20,7 +20,7 @@ public class IPLAutomation {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         WebDriver wd = new ChromeDriver(options);
-        wd.get("https://www.iplt20.com/points-table/men/2025");
+        wd.get("https://www.iplt20.com/points-table/men/2026");
 
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(30));
         By tableLocator = By.className("ih-td-tab");

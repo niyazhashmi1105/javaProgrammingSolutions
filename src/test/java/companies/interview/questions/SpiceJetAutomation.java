@@ -25,18 +25,18 @@ public class SpiceJetAutomation {
         wd.get("https://www.spicejet.com/");
         WebDriverWait wait = new WebDriverWait(wd,Duration.ofSeconds(30));
 
-        By fromCityTextBoxLocator = By.xpath("//div[text()=\"From\"]/following-sibling::div/input");
+        By fromCityTextBoxLocator = By.xpath("//div[text()='From']/following-sibling::div/input");
         WebElement fromCityTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(fromCityTextBoxLocator));
         fromCityTextBox.sendKeys("CCU");
 
-        By toCityTextBoxLocator = By.xpath("//div[text()=\"To\"]/following-sibling::div/input");
+        By toCityTextBoxLocator = By.xpath("//div[text()='To']/following-sibling::div/input");
         WebElement toCityTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(toCityTextBoxLocator));
         toCityTextBox.sendKeys("IXR");
 
-        By calendarPickerLocator = By.xpath("//div[@data-testid=\"undefined-calendar-picker\"]");
+        By calendarPickerLocator = By.xpath("//div[@data-testid='undefined-calendar-picker']");
         WebElement calendarPicker = wait.until(ExpectedConditions.visibilityOfElementLocated(calendarPickerLocator));
 
-        By nextButtonLocator = By.xpath(".//*[local-name()='svg' and @data-testid=\"svg-img\"]");
+        By nextButtonLocator = By.xpath(".//*[local-name()='svg' and @data-testid='svg-img']");
         WebElement nextButton = calendarPicker.findElement(nextButtonLocator);
         nextButton.click();
 
@@ -62,7 +62,6 @@ public class SpiceJetAutomation {
         try {
             Thread.sleep(timeInSec*1000);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
